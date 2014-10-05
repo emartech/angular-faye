@@ -1,7 +1,7 @@
 {
-  "name": "angular-faye",
-  "version": "0.2.2",
-  "homepage": "https://github.com/monterail/angular-faye",
+  "name": "ems-angular-faye",
+  "version": "0.2.4",
+  "homepage": "https://github.com/emartech/angular-faye",
   "description": "Angular.js + Faye",
   "main": "build/angular-faye.js",
   "keywords": [
