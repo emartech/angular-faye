@@ -1,10 +1,10 @@
 {
   "name": "angular-faye",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "authors": [
     "Tymon Tobolski <tymon.tobolski@monterail.com>"
   ],
-  "repository": "git://github.com/teamon/angular-faye.git",
+  "repository": "git://github.com/emartech/angular-faye.git",
   "description": "Angular.js + Faye",
   "main": "build/angular-faye.js",
   "dependencies": {
@@ -12,9 +12,9 @@
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-release": "~0.5.1"
+    "grunt-contrib-coffee": "~0.11.1",
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-release": "^0.5.1"
   },
   "keywords": [
     "angular",
@@ -22,7 +22,7 @@
     "ruby"
   ],
   "license": "MIT",
-  "homepage": "http://github.com/teamon/angular-faye",
+  "homepage": "https://github.com/emartech/angular-faye",
   "ignore": [
     "**/.*",
     "node_modules",
