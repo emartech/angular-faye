@@ -1,8 +1,7 @@
 angular.module "faye", []
 
-angular.module("faye")
-.constant 'Faye', window.Faye
-.factory "$faye", ["$q", "$rootScope", "Faye", ($q, $rootScope, Faye) ->
+angular.module("faye").constant 'Faye', window.Faye
+angular.module("faye").factory "$faye", ["$q", "$rootScope", "Faye", ($q, $rootScope, Faye) ->
   (url, fun) ->
     scope = $rootScope
     client = new Faye.Client url

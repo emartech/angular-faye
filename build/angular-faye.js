@@ -1,8 +1,10 @@
 (function() {
   angular.module("faye", []);
 
+  angular.module("faye").constant('Faye', window.Faye);
+
   angular.module("faye").factory("$faye", [
-    "$q", "$rootScope", function($q, $rootScope) {
+    "$q", "$rootScope", "Faye", function($q, $rootScope, Faye) {
       return function(url, fun) {
         var client, scope;
         scope = $rootScope;
