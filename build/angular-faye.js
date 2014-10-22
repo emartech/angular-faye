@@ -5,13 +5,13 @@
 
   angular.module("faye").factory("$faye", [
     "$q", "$rootScope", "Faye", function($q, $rootScope, Faye) {
-      return function(url, fun) {
+      return function(url, options) {
         var client, scope;
-        scope = $rootScope;
-        client = new Faye.Client(url);
-        if (typeof fun === "function") {
-          fun(client);
+        if (options == null) {
+          options = {};
         }
+        scope = $rootScope;
+        client = new Faye.Client(url, options);
         return {
           client: client,
           publish: function(channel, data) {
